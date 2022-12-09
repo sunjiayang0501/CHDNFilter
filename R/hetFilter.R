@@ -78,6 +78,7 @@ hetFilter <- function(individual_info) {
   
   return(filtered)
 }
+<<<<<<< HEAD
 
 
 
@@ -90,3 +91,5 @@ hetFilter <- function(individual_info) {
 
 
 
+=======
+>>>>>>> 61aefc1419a034e58de862a37e14f11bcb9659d3
