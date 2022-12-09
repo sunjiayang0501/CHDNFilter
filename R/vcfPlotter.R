@@ -46,8 +46,5 @@ vcfPlotter <- function(filename) {
   
   return(my_plot)
 }
-<<<<<<< HEAD
-=======
 
 # [END]
->>>>>>> 641cf1961a5b498de1d6d2205327d6636f6880ab

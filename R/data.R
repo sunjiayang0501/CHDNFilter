@@ -9,8 +9,6 @@
 #'  individual1
 #' }
 "individual1"
-<<<<<<< HEAD
-=======
 
 #' Individual2: 21B02337261
 #'
@@ -31,9 +29,6 @@
 #'  individual3
 #' }
 "individual3"
-
-# [END]
->>>>>>> 641cf1961a5b498de1d6d2205327d6636f6880ab
 
 #' Individual2: 21B02337261
 #'

@@ -79,21 +79,4 @@ hetFilter <- function(individual_info) {
   return(filtered)
 }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 61aefc1419a034e58de862a37e14f11bcb9659d3
-=======
 # [END]
->>>>>>> 641cf1961a5b498de1d6d2205327d6636f6880ab
