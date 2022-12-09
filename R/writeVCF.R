@@ -19,7 +19,7 @@
 #'
 #'@references
 #' Nono_sad, et al.
-#  "R write.table append dataframe to existing file”, Apr 12, 2020
+#  "R write.table append dataframe to existing file”, stackoverflow, Apr 12, 2020
 #' \href{https://stackoverflow.com/questions/61172304/r-write-table-append-dataframe-to-existing-file}{Link}
 #'
 #' @export
