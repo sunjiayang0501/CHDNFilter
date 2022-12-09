@@ -47,3 +47,4 @@ vcfPlotter <- function(filename) {
   return(my_plot)
 }
 
+# [END]
