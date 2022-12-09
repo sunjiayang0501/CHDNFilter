@@ -78,3 +78,5 @@ hetFilter <- function(individual_info) {
   
   return(filtered)
 }
+
+# [END]
