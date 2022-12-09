@@ -42,3 +42,5 @@ readVCF <- function(filename) {
   
   return(individual_info)
 }
+
+# [END]
