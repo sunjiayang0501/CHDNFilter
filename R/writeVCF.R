@@ -33,3 +33,7 @@ writeVCF <- function(individual_meta, filtered, file_name) {
   write.table(filtered, file = file_name, sep = "\t", row.names=FALSE, col.names=TRUE, append = T)
 }
 
+<<<<<<< HEAD
+=======
+# [END]
+>>>>>>> 641cf1961a5b498de1d6d2205327d6636f6880ab
