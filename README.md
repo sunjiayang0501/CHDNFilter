@@ -116,6 +116,7 @@ contributions. To submit an issue, use the GitHub issues.
     |- sample2.rda
     |- sample3.rda
   |- inst
+    |- CITATION
     |- extdata
       |- Overview_CHDNFilter.png
       |- individual1.vcf
