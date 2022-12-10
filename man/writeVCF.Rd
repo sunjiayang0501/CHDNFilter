@@ -11,7 +11,7 @@ writeVCF(individual_meta, filtered, file_name)
 
 \item{filtered}{Manipulated fix region together with gt region.}
 
-\item{fil_ename}{The file name of the VCF file wish to be written.}
+\item{file_name}{The file name of the VCF file wish to be written.}
 }
 \value{
 VCF file (text file) with three sections. "The meta region", "The fix region",
