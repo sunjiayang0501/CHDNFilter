@@ -1,5 +1,5 @@
 Package: CHDNFilter
-Title: heterozygous mutations and homozygous mutations identifier
+Title: A heterozygous mutations and homozygous mutation identifier
 Version: 0.0.0.9000
 Authors@R: 
     person("Jiayang", "Sun", , "sunjiayang1@gmail.com", role = c("aut", "cre"))
@@ -14,5 +14,8 @@ LazyData: true
 Imports: 
     vcfR
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+VignetteBuilder: knitr
