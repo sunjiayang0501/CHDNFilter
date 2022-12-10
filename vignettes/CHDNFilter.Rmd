@@ -16,10 +16,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(CHDNFilter)
-```
-
 ```{r setup, include=FALSE}
 # The following codes are adapted from Testing package: Introduction_TestPackage.Rmd
 library("knitr")
@@ -42,7 +38,7 @@ The goal of this package is to develop functions that can identify heterozygous 
 
 To obtain the **oncoAnalysis** package, use the following commands:
 
-``` r
+``` {r setup2}
 require("devtools")
 devtools::install_github("sunjiayang0501/CHDNFilter", build_vignettes = TRUE)
 library("CHDNFilter")
@@ -50,13 +46,13 @@ library("CHDNFilter")
 
 To glance all sample functions currently available in the package:
 
-``` r
+``` {r overview}
 ls("package:CHDNFilter")
 ```
 
 To glance all sample data sets currently available in the package:
 
-``` r
+``` {r loaddata}
 data(package = "CHDNFilter")
 ```
 
@@ -86,6 +82,7 @@ The function that reads in VCF file and divides it into three sections for conve
 library("vcfR")
 individual1 <- system.file("extdata", "individual1.vcf", package = "CHDNFilter")
 sample1 <- readVCF(individual1)
+sample1
 ```
 
 ## Obtain Mutation Info
@@ -94,13 +91,15 @@ sample1 <- readVCF(individual1)
 The function that takes VCF file GT field as input, filters out all heterozygous mutations, outputs the heterozygous mutations.
 ```{r hetFilter , message=FALSE}
 hetFilterResults1 <- hetFilter(sample1)
+hetFilterResults1
 ```
 Returns a table containing all heterozygous mutations in this individual's genotype information are the same.
 
 ### `homoFilter()`
 The function that takes VCF file GT field as input, filters out all homozygous mutations, outputs the homozygous mutations.
-```{r hetFilter , message=FALSE}
+```{r homoFilter , message=FALSE}
 homFilterResults1 <- homoFilter(sample1)
+homFilterResults1
 ```
 Returns a table containing all homozygous mutations in this individual's genotype information are the same.
 
@@ -115,6 +114,7 @@ vcffile1 <- vcfR::read.vcfR(file = individual1)
 
 # plot using vcfPlotter()
 my_plots <- vcfPlotter(vcffile1)
+my_plots
 ```
 Returns VCF file plotted on 3 different aspects: read depth, mapping quality, and Phred-Scaled quality. 
 
@@ -122,7 +122,7 @@ Returns VCF file plotted on 3 different aspects: read depth, mapping quality, an
 
 ### `writeVCF()`
 The function writes manipulated variant calls into a new text file with designated name.
-```{r hetFilter , message=FALSE}
+```{r writeVCF , message=FALSE}
 writeVCF(sample1[1], homFilterResults1, "individual1_homo.vcf")
 ```
 Creates VCF file (text file) with three sections. "The meta region", "The fix region", and "The gt region". Each section can be analyzed separately.
